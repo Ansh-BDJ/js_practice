@@ -12,7 +12,7 @@ let userEmail;
 const Id = Symbol("123")
 const anotherId = Symbol("123")
 
-console.log(Id === anotherId);
+//console.log(Id === anotherId);
 
 
 // Reference (Non Primitive)
@@ -27,4 +27,28 @@ let myObj = {
 const myFunction = function () {
     console.log("Hello world!");
 }
-console.log(typeof anotherId);
+//console.log(typeof anotherId);
+
+
+// ************************
+// Stack(Primitive)         Heap(Non-Primitive)
+
+let youtubeName = "Ansh BDJ"
+let anotherName = youtubeName
+anotherName = "bdjprod"
+
+//console.log(anotherName);
+//console.log(youtubeName);
+
+let userOne = {
+    email: "ansh@gmail.com",
+    upi: "bdj@12"
+}
+let userTwo = userOne
+userTwo.email = "bdj@outlook.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
